@@ -10,49 +10,102 @@ namespace c0732136
     {
         static void Main(string[] args)
         {
-            StudentInformation _Mary = new StudentInformation("Mary", 3.8, 20);
+            StudentInformation Mary = new StudentInformation("Mary", 3.8, 20);
 
-            StudentInformation _john = new StudentInformation("john", 3.8, 20);
+            StudentInformation John = new StudentInformation("John", 1.8, 2);
 
-            StudentInformation _Mark = new StudentInformation("Mark", 3.8, 20);
+            StudentInformation Mark = new StudentInformation("Mark", 2.5, 3);
 
-            StudentInformation _Steve = new StudentInformation("Steve", 3.8, 20);
+            StudentInformation Steve = new StudentInformation("Steve", 3.3, 18);
 
-            StudentInformation _Cindy = new StudentInformation("Cindy", 3.8, 20);
+            StudentInformation Cindy = new StudentInformation("Cindy", 2.3, 12);
+
+
+
+
+
+            var StudentList = new List<StudentInformation>();
+
+
+
+            StudentList.Add(Mary);
+
+            StudentList.Add(John);
+
+            StudentList.Add(Mark);
+
+            StudentList.Add(Steve);
+
+            StudentList.Add(Cindy);
+
+
+
+            foreach (var Student in StudentList)
+
+            {
+
+                Console.WriteLine(Student.Name);
+
+            }
 
             Console.ReadLine();
 
         }
-    }
+
+
 
     }
+
+
 
     class StudentInformation
 
     {
 
-        public string name;
+        public string Name;
 
 
 
         public double GPA;
 
-        public int attendence;
+        public int Attn;
 
-        public StudentInformation(string aName, double aGPA, int dAttendence)
+
+
+        public StudentInformation(string aName, double aGPA, int aAttn)
 
         {
 
-            name = aName;
+            Name = aName;
 
             GPA = aGPA;
 
-            attendence = dAttendence;
+            Attn = aAttn;
+
         }
+
+
 
     }
 
-         
-    
-    
+
+
+    class StudentList
+
+    {
+
+        public void CICS()
+
+        {
+
+        }
+    }
+}
+
+
+
+
+
+
+
 
